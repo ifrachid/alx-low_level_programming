@@ -1,19 +1,20 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0
+ * main - Entry Block
+  *Description: prints _putchar followed by a new line
+ * Return: 0
  */
 int main(void)
 {
-char *sh = "_putchar";
+	char c[8] = "_putchar";
 
-while (*sh)
-{
-_putchar(*sh);
-sh++;
-}
-_putchar('\n');
+	int i = 0;
 
-return (0);
+	while (i < 8)
+	{
+		_putchar(c[i]);
+		i++;
+	}
+	_putchar('\n');
+	return (0);
 }
